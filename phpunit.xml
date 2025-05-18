@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="bootstrap.php"
+         colors="true"
+         stopOnFailure="false"
+         verbose="true">
+    <testsuites>
+        <testsuite name="Default">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <report>
+            <text showUncoveredFiles="true" />
+        </report>
+        <minCoverage>
+            <lines>97</lines>
+            <functions>97</functions>
+            <methods>97</methods>
+            <classes>97</classes>
+        </minCoverage>
+    </coverage>
+</phpunit>
